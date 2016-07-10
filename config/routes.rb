@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: "posts#index"
   get "specific_post", to: "posts#show"
   get "new", to: "posts#new"
+  post "new", to: "posts#create"
 end
