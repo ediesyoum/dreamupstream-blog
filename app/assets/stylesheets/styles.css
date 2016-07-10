@@ -11,7 +11,7 @@ header {
   padding: 1px 0px 0px 0px;
 }
 a {
-  color: orange;
+  color: orangered;
   text-decoration: none;
 }
 a:hover {
@@ -21,7 +21,7 @@ a:hover {
 }
 h1 a:link,
 h1 a:visited {
-    color: ;
+    color: orange;
 }
 h1 {
   color: orangered;
