@@ -5,7 +5,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    render json: request.params
+    index = request.params[:post_number].to_i
+    @post = Post.all[index]
   end
 
   def new
