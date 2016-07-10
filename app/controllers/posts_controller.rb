@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   end
 
   def show
-
+    render json: request.params
   end
 
   def new

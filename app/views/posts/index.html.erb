@@ -3,8 +3,8 @@
 
   <ul>
     <li><a href="/specific_post">Specific post</a></li>
-    <% @posts.each do |post| %>
-    <li><%= post %></li>
+    <% @posts.each_with_index do |post, index| %>
+    <li><%= link_to post, "/post/#{index}"%></li>
     <% end %>
   </ul>
 
