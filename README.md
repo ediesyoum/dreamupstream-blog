@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# dreamupstream-blog
+A blog created with Ruby on Rails.
+>>>>>>> 64cd518afb3086054df640b44c527c6519d60a37
