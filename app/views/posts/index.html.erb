@@ -3,7 +3,7 @@
 
   <ul>
     <% @posts.each_with_index do |post, index| %>
-    <li><%= link_to post.title, "/post/#{index}"%></li>
+    <li><%= link_to "#{post.title} (#{post.comments.length})", "/post/#{index}"%></li>
     <% end %>
     <li><%= link_to "Create a new post", "/new" %></li>
   </ul>

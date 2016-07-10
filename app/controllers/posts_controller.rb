@@ -19,7 +19,10 @@ class PostsController < ApplicationController
   end
 
   def update
-    render json: request.params
+    index = request.params[:post_number].to_i
+    post = Post.all[index]
+    post.comments.push(request.params[:comment])
+    redirect_to "/post/#{index}"
   end
 
 end
