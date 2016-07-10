@@ -1,3 +1,9 @@
 <div>
   <h2>Post: <%= @post.title %></h2>
+
+  <ol>
+    <% @post.comments.each do |comment| %>
+    <li><%= comment %></li>
+    <% end %>
+  </ol>
 </div>

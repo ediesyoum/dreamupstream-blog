@@ -4,10 +4,15 @@ class Post
 
   @@all = []
 
-  attr_accessor :title
+  attr_accessor :title, :comments
 
   def initialize(title)
     @title = title
+    @comments = [
+      "Comment A",
+      "Comment B",
+      "Comment C"
+    ]
     @@all.push(self)
   end
 
