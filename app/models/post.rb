@@ -2,11 +2,12 @@ class Post
 
   cattr_accessor :all
 
-  @@all = [
-    "Post One",
-    "Post Two",
-    "Post Three",
-    "Post Four"
-  ]
+  @@all = []
+
+  attr_accessor :title
+
+  def initialize(title)
+    @title = title
+  end
 
 end

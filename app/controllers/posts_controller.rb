@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.all.push(request.params[:title])
+    Post.all.push(Post.new(request.params[:title]))
     redirect_to "/"
   end
 
