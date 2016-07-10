@@ -14,8 +14,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.all.push(Post.new(request.params[:title]))
-    redirect_to "/"
+    newpost = Post.new(request.params[:title])
+    redirect_to "/post/#{Post.all.find_index(newpost)}"
   end
 
 end

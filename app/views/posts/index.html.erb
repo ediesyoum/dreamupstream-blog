@@ -2,10 +2,10 @@
   <h2>These are my posts:</h2>
 
   <ul>
-    <li><a href="/specific_post">Specific post</a></li>
     <% @posts.each_with_index do |post, index| %>
     <li><%= link_to post.title, "/post/#{index}"%></li>
     <% end %>
+    <li><%= link_to "Create a new post", "/new" %></li>
   </ul>
 
 </div>
