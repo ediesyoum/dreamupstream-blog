@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
 
   def index
+    @posts = [
+      "Post One",
+      "Post Two",
+      "Post Three"
+    ]
 
   end
 

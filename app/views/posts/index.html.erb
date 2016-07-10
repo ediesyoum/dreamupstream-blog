@@ -1,5 +1,10 @@
 <p>These are my posts:</p>
 
-<ul>
-  <li><a href="/specific_post">Specific post</a></li>
-</ul>
+<div>
+  <ul>
+    <li><a href="/specific_post">Specific post</a></li>
+    <% @posts.each do |post| %>
+    <li><%= post %></li>
+    <% end %>
+  </ul>
+</div>
