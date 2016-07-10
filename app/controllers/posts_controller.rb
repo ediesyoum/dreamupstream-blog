@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    render :index
+    render :index 
   end
 
 end
