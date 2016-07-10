@@ -1,0 +1,71 @@
+body {
+	background-image: linear-gradient(to right, grey, teal);
+  font-family:'Futura-CondensedMedium';
+}
+header {
+  text-align: center;
+  color: #006a6b;
+  background-color: rgba(0,0,0,0.85);
+  background-size: cover;
+  font-style: normal;
+  padding: 1px 0px 0px 0px;
+}
+a {
+  color: orange;
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+  text-decoration: none;
+  cursor: crosshair;
+}
+h1 a:link,
+h1 a:visited {
+    color: ;
+}
+h1 {
+  color: orangered;
+  text-align: center;
+  font-size: 3em;
+}
+h2 {
+  color: black;
+}
+p {
+  text-align: justify;
+}
+img {
+  float: right;
+  margin: -50px 0px 0px 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  max-height: 240px;
+}
+ul {
+  padding: 10px;
+}
+li {
+  display: inline;
+  margin: 20px 20px 20px 20px;
+  border: 1px;
+  border-color: #006a6b;
+}
+div {
+  color: #24094b;
+  background-color: rgba(243,166,110,0.9);
+  border: 2px solid black;
+  border-radius: 20px;
+  max-width: 700px;
+  padding: 0px 20px 10px 20px;
+  margin: 5px auto;
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+  }
+  li {
+    padding: 5px;
+    display: block;
+  }
+}
